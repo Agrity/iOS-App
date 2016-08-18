@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="10174" systemVersion="15E65" minimumToolsVersion="Xcode 7.0">
+    <entity name="Bid" representedClassName=".Bid" syncable="YES">
+        <attribute name="almondPounds" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="almondSize" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="almondVariety" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="bidID" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="bidType" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="comment" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="expirationTime" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="poundsAccepted" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="pricePerPound" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="responseStatus" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="viewed" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <relationship name="grower" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Grower" inverseName="bids" inverseEntity="Grower" syncable="YES"/>
+    </entity>
+    <entity name="Grower" representedClassName=".Grower" syncable="YES">
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="firstName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="lastName" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="bids" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Bid" inverseName="grower" inverseEntity="Bid" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Bid" positionX="117" positionY="441" width="128" height="225"/>
+        <element name="Grower" positionX="376" positionY="218" width="128" height="118"/>
+    </elements>
+</model>

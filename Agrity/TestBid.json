@@ -1,0 +1,52 @@
+
+
+{
+    "bids":[
+        {
+            "bid_id": 1,
+            "almond_variety": "special",
+            "almond_size": "23/32",
+            "almond_pounds": 400,
+            "price_per_pound": 1.99,
+            "comment": "Super good almonds yo.",
+            "time_to_expire": 1,
+            "bid_response":
+            {
+                "bid_status": "OPEN",
+                "response_status": "NORESPONSE"
+            }
+        },
+        {
+            "bid_id": 2,
+            "almond_variety": "NONPARIEL",
+            "almond_size": "45/67",
+            "almond_pounds": 1000,
+            "price_per_pound": 2,
+            "comment": "A fairly lengthy message in order to see what will happen.",
+            "time_to_expire": 10,
+            "bid_response":
+            {
+            "bid_status": "OPEN",
+            "response_status": "NORESPONSE"
+            }
+        },
+        {
+            "bid_id": 3,
+            "almond_variety": "more special",
+            "almond_size": "12/34",
+            "almond_pounds": 50,
+            "price_per_pound": 434.4,
+            "comment": "yo.",
+            "time_to_expire": 123,
+            "bid_response":
+            {
+                "bid_status": "OPEN",
+                "response_status": "NORESPONSE"
+            }
+        }
+    ]
+}
+ 
+
+    
+
